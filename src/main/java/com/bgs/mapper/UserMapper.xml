@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bgs.mapper.UserMapper">
+	<select id="getUser" resultType="User">
+		select * from users where username= #{username}
+	</select>
+	<select id="getRoles" resultType="String">
+		SELECT r.roleName AS roleName FROM users u,role r,user_role ur 
+		WHERE u.id = ur.uid AND r.id = ur.rid AND u.username = #{username}
+	</select>
+	<select id="getpermissions" resultType="String">
+		SELECT p.p_name as premissionName FROM t_user u
+		,t_role r,user_role ur,t_permission p,role_permission rp 
+		WHERE u.id = ur.uid and r.id = ur.rid
+		and r.id = rp.rid and p.id = rp.pid and u.username=#{username}
+	</select>
+	
+	<select id="findProList" resultType="Product">
+		SELECT * FROM product
+	</select>
+	
+	<insert id="addProduct" parameterType="Product">
+		INSERT INTO product(proCode,proName,proDesc,proPhone,proContact,proAddress,proFax) 
+		VALUES(#{proCode},#{proName},#{proDesc},#{proPhone},#{proContact},#{proAddress},#{proFax})
+	</insert>
+	
+	<delete id="delProduct">
+		DELETE FROM product  WHERE id = #{id}
+	</delete>
+</mapper>

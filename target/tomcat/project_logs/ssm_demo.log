@@ -1,0 +1,337 @@
+2018-4-27 09:23:53[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2018-4-27 09:23:53[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Apr 27 09:23:53 CST 2018]; root of context hierarchy
+2018-4-27 09:23:53[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [E:\workspace\MavenKS\target\classes\applicationContext_mybatis.xml]
+2018-4-27 09:23:54[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-shiro.xml]
+2018-4-27 09:23:54[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-4-27 09:23:54[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class com.sun.proxy.$Proxy32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:54[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userServiceImp' of type [class com.bgs.service.UserServiceImp] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'ehcacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:55[ INFO](EhCacheManager.java:170) Using existing EHCache named [passwordRetryCache]
+2018-4-27 09:23:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'credentialsMatcher' of type [class com.bgs.realm.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dingRealm' of type [class com.bgs.realm.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:55[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:23:55[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 1694 ms
+2018-4-27 09:23:55[ INFO](FrameworkServlet.java:484) FrameworkServlet 'springDispatcherServlet': initialization started
+2018-4-27 09:23:55[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:23:55 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:23:55[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2018-4-27 09:23:55[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:23:55[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-4-27 09:23:55[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/nopower],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.ErrorController.nopower()
+2018-4-27 09:23:55[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/tologin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginjsp()
+2018-4-27 09:23:55[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/delProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.delProduct(int)
+2018-4-27 09:23:55[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/findProList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.findProList(org.springframework.ui.Model)
+2018-4-27 09:23:55[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginOut],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginOut()
+2018-4-27 09:23:55[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/addProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addProduct(com.bgs.bean.Product)
+2018-4-27 09:23:55[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-4-27 09:23:55[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:23:55 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:23:55[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:23:55 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:23:55[ INFO](FrameworkServlet.java:503) FrameworkServlet 'springDispatcherServlet': initialization completed in 566 ms
+2018-4-27 09:24:06[ WARN](DispatcherServlet.java:1120) No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'springDispatcherServlet'
+2018-4-27 09:26:25[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2018-4-27 09:26:25[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Apr 27 09:26:25 CST 2018]; root of context hierarchy
+2018-4-27 09:26:25[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [E:\workspace\MavenKS\target\classes\applicationContext_mybatis.xml]
+2018-4-27 09:26:25[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-shiro.xml]
+2018-4-27 09:26:25[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-4-27 09:26:25[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class com.sun.proxy.$Proxy32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:25[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userServiceImp' of type [class com.bgs.service.UserServiceImp] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'ehcacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:26[ INFO](EhCacheManager.java:170) Using existing EHCache named [passwordRetryCache]
+2018-4-27 09:26:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'credentialsMatcher' of type [class com.bgs.realm.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dingRealm' of type [class com.bgs.realm.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:26[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:26:26[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 1030 ms
+2018-4-27 09:26:26[ INFO](FrameworkServlet.java:484) FrameworkServlet 'springDispatcherServlet': initialization started
+2018-4-27 09:26:26[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:26:26 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:26:26[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2018-4-27 09:26:26[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:26:26[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-4-27 09:26:26[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/nopower],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.ErrorController.nopower()
+2018-4-27 09:26:26[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-4-27 09:26:26[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/findProList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.findProList(org.springframework.ui.Model)
+2018-4-27 09:26:26[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/addProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addProduct(com.bgs.bean.Product)
+2018-4-27 09:26:26[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/delProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.delProduct(int)
+2018-4-27 09:26:26[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginOut],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginOut()
+2018-4-27 09:26:26[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/tologin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginjsp()
+2018-4-27 09:26:26[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:26:26 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:26:26[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:26:26 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:26:26[ INFO](FrameworkServlet.java:503) FrameworkServlet 'springDispatcherServlet': initialization completed in 459 ms
+2018-4-27 09:28:44[ WARN](DispatcherServlet.java:1120) No mapping found for HTTP request with URI [/user/user/findProList] in DispatcherServlet with name 'springDispatcherServlet'
+2018-4-27 09:34:58[ WARN](DispatcherServlet.java:1120) No mapping found for HTTP request with URI [/user/addPro] in DispatcherServlet with name 'springDispatcherServlet'
+2018-4-27 09:35:23[ WARN](DispatcherServlet.java:1120) No mapping found for HTTP request with URI [/user/toadd] in DispatcherServlet with name 'springDispatcherServlet'
+2018-4-27 09:36:40[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2018-4-27 09:36:40[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Apr 27 09:36:40 CST 2018]; root of context hierarchy
+2018-4-27 09:36:40[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [E:\workspace\MavenKS\target\classes\applicationContext_mybatis.xml]
+2018-4-27 09:36:41[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-shiro.xml]
+2018-4-27 09:36:41[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-4-27 09:36:41[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class com.sun.proxy.$Proxy32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userServiceImp' of type [class com.bgs.service.UserServiceImp] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'ehcacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](EhCacheManager.java:170) Using existing EHCache named [passwordRetryCache]
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'credentialsMatcher' of type [class com.bgs.realm.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dingRealm' of type [class com.bgs.realm.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:36:41[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 1011 ms
+2018-4-27 09:36:41[ INFO](FrameworkServlet.java:484) FrameworkServlet 'springDispatcherServlet': initialization started
+2018-4-27 09:36:41[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:36:41 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:36:41[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2018-4-27 09:36:42[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:36:42[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/nopower],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.ErrorController.nopower()
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/toadd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addjsp()
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginOut],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginOut()
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/tologin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginjsp()
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/delProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.delProduct(int)
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/findProList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.findProList(org.springframework.ui.Model)
+2018-4-27 09:36:42[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/addProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addProduct(com.bgs.bean.Product)
+2018-4-27 09:36:42[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:36:41 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:36:42[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:36:41 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:36:42[ INFO](FrameworkServlet.java:503) FrameworkServlet 'springDispatcherServlet': initialization completed in 501 ms
+2018-4-27 09:38:07[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2018-4-27 09:38:07[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Apr 27 09:38:07 CST 2018]; root of context hierarchy
+2018-4-27 09:38:07[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [E:\workspace\MavenKS\target\classes\applicationContext_mybatis.xml]
+2018-4-27 09:38:07[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-shiro.xml]
+2018-4-27 09:38:08[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-4-27 09:38:08[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class com.sun.proxy.$Proxy32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userServiceImp' of type [class com.bgs.service.UserServiceImp] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'ehcacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](EhCacheManager.java:170) Using existing EHCache named [passwordRetryCache]
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'credentialsMatcher' of type [class com.bgs.realm.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dingRealm' of type [class com.bgs.realm.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:38:08[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 1095 ms
+2018-4-27 09:38:08[ INFO](FrameworkServlet.java:484) FrameworkServlet 'springDispatcherServlet': initialization started
+2018-4-27 09:38:08[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:38:08 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:38:08[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2018-4-27 09:38:08[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:38:08[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/nopower],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.ErrorController.nopower()
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/toadd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addjsp()
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/tologin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginjsp()
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginOut],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginOut()
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/findProList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.findProList(org.springframework.ui.Model)
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/delProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.delProduct(int)
+2018-4-27 09:38:08[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/addProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addProduct(com.bgs.bean.Product)
+2018-4-27 09:38:09[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:38:08 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:38:09[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:38:08 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:38:09[ INFO](FrameworkServlet.java:503) FrameworkServlet 'springDispatcherServlet': initialization completed in 415 ms
+2018-4-27 09:44:07[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2018-4-27 09:44:07[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Apr 27 09:44:07 CST 2018]; root of context hierarchy
+2018-4-27 09:44:07[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [E:\workspace\MavenKS\target\classes\applicationContext_mybatis.xml]
+2018-4-27 09:44:07[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-shiro.xml]
+2018-4-27 09:44:07[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-4-27 09:44:07[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class com.sun.proxy.$Proxy32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userServiceImp' of type [class com.bgs.service.UserServiceImp] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'ehcacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](EhCacheManager.java:170) Using existing EHCache named [passwordRetryCache]
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'credentialsMatcher' of type [class com.bgs.realm.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](AuthorizingRealm.java:248) No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2018-4-27 09:44:08[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dingRealm' of type [class com.bgs.realm.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:44:08[ INFO](EhCacheManager.java:159) Cache with name 'com.bgs.realm.MyRealm.authorizationCache' does not yet exist.  Creating now.
+2018-4-27 09:44:08[ WARN](AbstractApplicationContext.java:487) Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilter' defined in class path resource [spring-shiro.xml]: Cannot resolve reference to bean 'securityManager' while setting bean property 'securityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [spring-shiro.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'cacheManager' threw exception; nested exception is org.apache.shiro.cache.CacheException: net.sf.ehcache.CacheException: Caches cannot be added by name when default cache config is not specified in the config. Please add a default cache config in the configuration.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:232)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [spring-shiro.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'cacheManager' threw exception; nested exception is org.apache.shiro.cache.CacheException: net.sf.ehcache.CacheException: Caches cannot be added by name when default cache config is not specified in the config. Please add a default cache config in the configuration.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 24 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'cacheManager' threw exception; nested exception is org.apache.shiro.cache.CacheException: net.sf.ehcache.CacheException: Caches cannot be added by name when default cache config is not specified in the config. Please add a default cache config in the configuration.
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:121)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1502)
+	... 32 more
+2018-4-27 09:44:08[ERROR](ContextLoader.java:331) Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'shiroFilter' defined in class path resource [spring-shiro.xml]: Cannot resolve reference to bean 'securityManager' while setting bean property 'securityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [spring-shiro.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'cacheManager' threw exception; nested exception is org.apache.shiro.cache.CacheException: net.sf.ehcache.CacheException: Caches cannot be added by name when default cache config is not specified in the config. Please add a default cache config in the configuration.
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1469)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:232)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:615)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:465)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityManager' defined in class path resource [spring-shiro.xml]: Error setting property values; nested exception is org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'cacheManager' threw exception; nested exception is org.apache.shiro.cache.CacheException: net.sf.ehcache.CacheException: Caches cannot be added by name when default cache config is not specified in the config. Please add a default cache config in the configuration.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 24 more
+Caused by: org.springframework.beans.PropertyBatchUpdateException; nested PropertyAccessExceptions (1) are:
+PropertyAccessException 1: org.springframework.beans.MethodInvocationException: Property 'cacheManager' threw exception; nested exception is org.apache.shiro.cache.CacheException: net.sf.ehcache.CacheException: Caches cannot be added by name when default cache config is not specified in the config. Please add a default cache config in the configuration.
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:121)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1502)
+	... 32 more
+2018-4-27 09:45:30[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2018-4-27 09:45:30[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Apr 27 09:45:30 CST 2018]; root of context hierarchy
+2018-4-27 09:45:30[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [E:\workspace\MavenKS\target\classes\applicationContext_mybatis.xml]
+2018-4-27 09:45:30[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-shiro.xml]
+2018-4-27 09:45:30[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-4-27 09:45:30[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:45:30[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:30[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:30[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class com.sun.proxy.$Proxy32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userServiceImp' of type [class com.bgs.service.UserServiceImp] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'ehcacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](EhCacheManager.java:170) Using existing EHCache named [passwordRetryCache]
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'credentialsMatcher' of type [class com.bgs.realm.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dingRealm' of type [class com.bgs.realm.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:45:31[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 961 ms
+2018-4-27 09:45:31[ INFO](FrameworkServlet.java:484) FrameworkServlet 'springDispatcherServlet': initialization started
+2018-4-27 09:45:31[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:45:31 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:45:31[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2018-4-27 09:45:31[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:45:31[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/nopower],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.ErrorController.nopower()
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/tologin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginjsp()
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/delProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.delProduct(int)
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginOut],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginOut()
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/findProList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.findProList(org.springframework.ui.Model)
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/addProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addProduct(com.bgs.bean.Product)
+2018-4-27 09:45:31[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/toadd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addjsp()
+2018-4-27 09:45:31[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:45:31 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:45:31[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:45:31 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:45:32[ INFO](FrameworkServlet.java:503) FrameworkServlet 'springDispatcherServlet': initialization completed in 562 ms
+2018-4-27 09:49:48[ INFO](ContextLoader.java:285) Root WebApplicationContext: initialization started
+2018-4-27 09:49:48[ INFO](AbstractApplicationContext.java:510) Refreshing Root WebApplicationContext: startup date [Fri Apr 27 09:49:48 CST 2018]; root of context hierarchy
+2018-4-27 09:49:48[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from file [E:\workspace\MavenKS\target\classes\applicationContext_mybatis.xml]
+2018-4-27 09:49:48[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [spring-shiro.xml]
+2018-4-27 09:49:48[ INFO](PropertiesLoaderSupport.java:172) Loading properties file from class path resource [jdbc.properties]
+2018-4-27 09:49:48[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:49:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor#0' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dataSource' of type [class org.apache.commons.dbcp.BasicDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:48[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'sqlSesionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userMapper' of type [class com.sun.proxy.$Proxy32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'userServiceImp' of type [class com.bgs.service.UserServiceImp] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'ehcacheManager' of type [class org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](EhCacheManager.java:170) Using existing EHCache named [passwordRetryCache]
+2018-4-27 09:49:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'credentialsMatcher' of type [class com.bgs.realm.RetryLimitHashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'dingRealm' of type [class com.bgs.realm.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](PostProcessorRegistrationDelegate.java:309) Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-4-27 09:49:49[ INFO](ContextLoader.java:325) Root WebApplicationContext: initialization completed in 1005 ms
+2018-4-27 09:49:49[ INFO](FrameworkServlet.java:484) FrameworkServlet 'springDispatcherServlet': initialization started
+2018-4-27 09:49:49[ INFO](AbstractApplicationContext.java:510) Refreshing WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:49:49 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:49:49[ INFO](XmlBeanDefinitionReader.java:317) Loading XML bean definitions from class path resource [springmvc-servlet.xml]
+2018-4-27 09:49:49[ INFO](AutowiredAnnotationBeanPostProcessor.java:153) JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-4-27 09:49:49[ INFO](AbstractUrlHandlerMapping.java:314) Mapped URL path [/static/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/nopower],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.ErrorController.nopower()
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginAdmin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.login(java.lang.String,java.lang.String,org.springframework.ui.Model)
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/addProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addProduct(com.bgs.bean.Product)
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/tologin],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginjsp()
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/toadd],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.addjsp()
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/delProduct],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.delProduct(int)
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/findProList],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.findProList(org.springframework.ui.Model)
+2018-4-27 09:49:49[ INFO](AbstractHandlerMethodMapping.java:220) Mapped "{[/user/loginOut],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.bgs.web.UserController.loginOut()
+2018-4-27 09:49:49[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:49:49 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:49:49[ INFO](RequestMappingHandlerAdapter.java:518) Looking for @ControllerAdvice: WebApplicationContext for namespace 'springDispatcherServlet-servlet': startup date [Fri Apr 27 09:49:49 CST 2018]; parent: Root WebApplicationContext
+2018-4-27 09:49:49[ INFO](FrameworkServlet.java:503) FrameworkServlet 'springDispatcherServlet': initialization completed in 464 ms

@@ -1,0 +1,76 @@
+package com.bgs.util;
+
+import java.io.Serializable;
+
+public class Pager implements Serializable{
+	//当前页数
+	private int currentPage;
+	//总数
+	private int rowCount;
+	//每页几条数据
+	private int rowPerPage;
+	//页数
+	private int pageCount;
+	private String url;
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+
+	public void setRowCount(int rowCount) {
+		this.rowCount = rowCount;
+	}
+
+	public void setRowPerPage(int rowPerPage) {
+		this.rowPerPage = rowPerPage;
+	}
+
+	public void setCurrentPage(int currentPage) {
+		this.currentPage = currentPage;
+	}
+	
+	
+	public void setPageCount(int pageCount) {
+		this.pageCount = pageCount;
+	}
+
+	public int getRowCount() {
+		return rowCount;
+	}
+
+	public int getRowPerPage() {
+		return rowPerPage;
+	}
+
+	public int getCurrentPage() {
+		return currentPage;
+	}
+
+	public int getPageCount() {
+		return pageCount;
+	}
+	public Pager(int rowCount, int rowPerPage, int currentPage) {
+
+		this.rowCount = rowCount;
+		this.rowPerPage = rowPerPage;
+		this.currentPage = currentPage;
+		if(this.rowCount % this.rowPerPage == 0){
+			this.pageCount = this.rowCount / this.rowPerPage;
+		}else if(this.rowCount % this.rowPerPage > 0){
+			this.pageCount = this.rowCount / this.rowPerPage + 1;
+		}else{
+			this.pageCount = 0;
+		}
+	}
+	@Override
+	public String toString() {
+		return "Pager [currentPage=" + currentPage + ", rowCount=" + rowCount + ", rowPerPage=" + rowPerPage
+				+ ", pageCount=" + pageCount + ", url=" + url + "]";
+	}
+	
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<bean id="ehcacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+        <property name="cacheManagerConfigFile" value="classpath:ehcache.xml"/>
+    </bean>
+<!-- 	设置加密方式为MD5 -->
+	<!-- <bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+	      指定散列算法为 md5，需要和生成密码时的一样； 
+	        <property name="hashAlgorithmName" value="md5"/>
+			散列次数
+ 	        <property name="hashIterations" value="2"></property>
+	 </bean> -->
+	 
+    <!--ehcache-->
+	<bean id="credentialsMatcher" class="com.bgs.realm.RetryLimitHashedCredentialsMatcher">
+	        <constructor-arg ref="ehcacheManager"/> 
+	        <property name="hashAlgorithmName" value="md5"/> 
+	         <property name="hashIterations" value="1024"></property>
+	 </bean>
+    
+	<bean id="dingRealm" class="com.bgs.realm.MyRealm">
+			<property name="credentialsMatcher" ref="credentialsMatcher"></property>
+<!-- 			不需要缓存 -->
+            <property name="cachingEnabled" value="false"></property>
+	</bean>
+	<!-- 配置权限管理器 -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<!-- 自定义处理realm -->
+		<property name="realm" ref="dingRealm"></property>
+		<property name="cacheManager" ref="ehcacheManager"></property>
+	</bean>
+	<!-- Shiro过滤器 核心 ,id的名称要和web.xml的shiroFilter名称一致-->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+	 <!-- Shiro的核心安全接口,这个属性是必须的 -->
+		<property name="securityManager" ref="securityManager" />
+		 <!-- 身份认证失败，则跳转到登录页面的配置 -->
+		<property name="loginUrl" value="/loginAdmin" />
+		 <!-- 权限认证失败，则跳转到指定页面 -->
+		<property name="unauthorizedUrl" value="/nopower" />
+		 <!-- Shiro连接约束配置,即过滤链的定义 -->
+		<property name="filterChainDefinitions">
+			<value> 
+<!-- 			anon 表示匿名访问，不需要认证以及授权
+				发起/loginAdmin这个请求是不需要进行身份认证的
+				这个请求在这次项目中是一个登录请求，一般对于这样的请求都是不需要身份认证的。-->
+				/loginAdmin=anon
+				/home*=authc
+				/teacher/teacherFindOne=perms["teacher:findTeacherOne"]
+				/teacher/**=roles[manage]
+				/student/studentFindOne=perms["student:studentFindOne"]
+				/student/**=roles[teacher]
+				/teacher=perms["user:create"]
+			</value>
+		</property>
+	</bean>
+		
+	 <!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" /> 
+	<!-- ===开启Shiro注解 start== -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"
+		depends-on="lifecycleBeanPostProcessor" />
+	<bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+		<property name="securityManager" ref="securityManager" />
+	</bean>
+<!-- ===开启Shiro注解  end===-->
+</beans>
